@@ -21,6 +21,10 @@
 		  border: 5px solid #6915cf;
 		  position: relative;
 		}
+		input[type="button"]{
+			border: none;
+			outline: none;
+		}
 		.bg,#cover{
 			position: absolute;
 			top: 0;
@@ -66,6 +70,7 @@
 			margin-top: 10px;
 		}
 	</style>
+	<script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
 </head>
 <body>
 <header>
@@ -73,6 +78,7 @@
   <img src="http://ife.baidu.com/2016/static/img/logo_c9785ff2.png">
 </header>
 <section>
+	<input type="button" onclick="history.go(-1)" value="后退一页">
 	<div class="bg"></div>
 	<div id="cover"></div>
   <p>- 2019年12月8日19:32:34，学习总用时不到 20 min、然后写个页面花了近1小时。。。，学习目标是提起对前端的兴趣，早已达成</p>
@@ -82,7 +88,8 @@
   <p>主要是为了养家糊口，但是你说这个做事情还是要点感觉的后端应该是不会，前端主要是为了自由，咱视觉上要自由，不能限制在一个屏幕里面，让感觉去飞翔</p>
 </section>
 <footer>
-	<a href="https://github.com/shanliangdeYWJ">https://github.com/shanliangdeYWJ</a><button id="btn">点按钮，打个招呼吧</button>
+	<a href="https://github.com/shanliangdeYWJ">https://github.com/shanliangdeYWJ</a>
+	<input type="button" id="btn" value="点按钮，打个招呼吧">
 </footer>
 
 </body>
@@ -92,11 +99,11 @@
 	  // 点按钮后弹出一个文字，你可以尝试改变文字内容
 	  alert("你好啊，欢迎来到善良的YWJ的笔记");
 	}
-	if(document.referrer){
-		var str = document.referrer;
-		str = '返回上一页：<a href="'+ str + '">' + str + '</a>';
-		document.write(str);
-	}
+	// if(document.referrer){
+	// 	var str = document.referrer;
+	// 	str = '返回上一页：<a href="'+ str + '">' + str + '</a>';
+	// 	document.write(str);
+	// }
 </script>
 
 </html>
